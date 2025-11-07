@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="/Css/index.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Beats Scissors. But Can You Beat the Odds?</h1>
+        <img src="/Images/RPS.jpg" alt="Rock Paper Scissors">
+    </header>
+ <div class="container">
+    <section id="game-rules" class="card">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Rock Smashes Scissors</li>
+            <li>Scissors Cut Paper</li>
+            <li>Paper Covers Rock</li>
+        </ul>
+        <p>Choose wisely, Every click counts! <br> Play best of 5 or 7 rounds to claim victory.</p>
+    </section>
+    <section id="hand-signals" class="card">
+        <h2>Hand signals</h2>
+        <ul>
+            <li>Rock: A Closed fist</li>
+            <li>Paper: A flat,Open hand</li>
+            <li>Scissors: A fist with the index and middle fingers extended to form a "v"</li>
+        </ul>
+    </section>
+</div>
+    <section id="game-mode" class="card">
+        <h2>Choose your game mode</h2>
+        <button id="best-of-5">5 rounds</button>
+        <button id="best-of-7">7 rounds</button>
+    </section>
+
+    <section id="game-choices">
+        <h2>Choose</h2>
+        <button id="rock-choice" aria-label="Choose Rock" class="rock">
+            <img src="/Images/rock.png" alt="Rock" width="100" height="100">
+            </button>
+        <button id="paper-choice" aria-label="Choose Paper" class="paper">
+            <img src="/Images/paper.png" alt="Paper" width="100" height="100">
+            </button>
+        <button id="scissors-choice" aria-label="Choose Scissors" class="scissors">
+            <img src="/Images/scissors.png" alt="Scissors" width="100" height="100">
+            </button>
+    </section>
+    <div class="container2">
+    <section id="selection-display" class="card">
+            <h2>Your Selection Vs Computer's Selection</h2>
+            <p>Your choice: <span id="player-selection"></span></p>
+            <p>Computer choice: <span id="computer-choice"></span></p>
+    </section>
+    <section id="result-display" class="card">
+        <h2>Result: </h2>
+        <p id="round-result"></p>
+    </section>
+    <section id="scoreboard" class="card">
+        <h2>Scoreboard</h2>
+        <p>Player Score: <span id="player-score">0</span> </p>
+        <p>Computer Score: <span id="computer-score">0</span></p>
+        <p>Current Round Number: <span id="current-round">0</span></p>
+    </section> 
+    </div>
+    <section id="end-game">
+        <h2>Game Over!</h2>
+        <p id="final-result">Final Result:</p>
+        <button id="restart-game">Restart Game</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Rock Paper Scissors Game. All rights reserved. @Yanet Abreham</p>
+    </footer>
+    <script src="Js/index.js"></script>
+</body>
+</html>
